@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+            width: 300px;
+            height: 300px;
+        }
+
+        .butn {
+            width: 80px;
+            height: 25px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .right {
+            text-align: right;
+        }
+        .center {
+            text-align: center;
+        }
+        .butn .active {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+
+
+    <textarea id="text-input" onkeydown="updateText()" ></textarea>
+    
+    <textarea id="text-output"></textarea>
+
+    <button class="butn" id="textbold" onclick="makeBold()">Bold</button>
+    <button class="butn" id="textitalic" onclick="makeItalic()">Italic</button>
+    <button class="butn" id="textunder" onclick="makeUnderline()">Underline</button>
+
+    <button class="butn" onclick="textleft()">Left</button>
+    <button class="butn" onclick="textcenter()">Center</button>
+    <button class="butn" onclick="textright()">Right</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
